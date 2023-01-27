@@ -9,6 +9,7 @@ import { RegisterComponent } from './components/auth/register/register.component
 import { ProductsListingComponent } from './components/marketplace/products-listing/products-listing.component';
 import { ProductDetailComponent } from './components/marketplace/product-detail/product-detail.component';
 import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './components/auth/login/login.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     RegisterComponent,
     ProductsListingComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

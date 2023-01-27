@@ -61,7 +61,7 @@
                               <div class="easyzoom-style">
                                   <div class="easyzoom easyzoom--overlay is-ready">
                                       <a href="assets/images/product-details/pro-details-zoom-img-1.png">
-                                          <img src="assets/images/product-details/pro-details-large-img-1.png" alt="">
+                                          <img [src]="product.thumbnail" alt="">
                                       </a>
                                   </div>
                                   <a class="easyzoom-pop-up img-popup" href="assets/images/product-details/pro-details-large-img-1.png">
@@ -123,10 +123,10 @@
           </div>
           <div class="col-lg-6">
               <div class="product-details-content aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
-                  <h2>New Modern Chair</h2>
+                  <h2>{{product?.title}}</h2>
                   <div class="product-details-price">
-                      <span class="old-price">$25.89 </span>
-                      <span class="new-price">$20.25</span>
+                      <!-- <span class="old-price">$25.89 </span> -->
+                      <span class="new-price">${{product.price}}</span>
                   </div>
                   <div class="product-details-review">
                       <div class="product-rating">
