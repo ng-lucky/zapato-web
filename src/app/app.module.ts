@@ -8,8 +8,10 @@ import { FooterComponent } from './app-core/common/footer/footer.component';
 import { RegisterComponent } from './components/auth/register/register.component';
 import { ProductsListingComponent } from './components/marketplace/products-listing/products-listing.component';
 import { ProductDetailComponent } from './components/marketplace/product-detail/product-detail.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './components/auth/login/login.component';
+import { NotFoundComponent } from './app-core/common/not-found/not-found.component';
+import { MyOrderHistoryComponent } from './components/profile/my-order-history/my-order-history.component';
 
 @NgModule({
   declarations: [
@@ -19,12 +21,15 @@ import { LoginComponent } from './components/auth/login/login.component';
     RegisterComponent,
     ProductsListingComponent,
     ProductDetailComponent,
-    LoginComponent
+    LoginComponent,
+    NotFoundComponent,
+    MyOrderHistoryComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule
   ],
   providers: [],
